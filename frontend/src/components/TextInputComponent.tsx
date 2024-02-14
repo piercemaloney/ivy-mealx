@@ -26,7 +26,7 @@ const TextInputComponent: React.FC<TextInputComponentProps> = () => {
     event.preventDefault();
 
     // Regular expression to check if the first 10 characters of input are uppercase letters or numbers
-    const pattern = /^[A-Z0-9]{10}/;
+    const pattern = /^[A-Z0-9]{9}/;
 
     if (!pattern.test(input)) {
       toast({
